@@ -1,0 +1,133 @@
+@import "tailwindcss";
+
+:root {
+  --bg-canvas: #ffffff;
+  --bg-surface: #f4f5f7;
+  --bg-surface-strong: #eaecf0;
+  --ink-primary: #111318;
+  --ink-secondary: #3e4451;
+  --ink-muted: #5a6170;
+
+  /* Original MC Permoníček Brand Palette */
+  --brand-sky: #52b5ed;
+  --brand-sky-ink: #0b6ca3;
+  --brand-sky-deep: #0b1e2d;
+
+  --brand-coral: #e24d2d;
+  --brand-coral-ink: #b93316;
+  --brand-coral-deep: #240904;
+
+  --brand-gold: #fdd10a;
+  --brand-gold-deep: #241d00;
+  --brand-gold-muted: #4d3e00;
+
+  --brand-lime: #bbe364;
+  --brand-lime-deep: #182605;
+  --brand-lime-muted: #2f490b;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--bg-canvas);
+    color: var(--ink-primary);
+    caret-color: var(--brand-sky-ink);
+    scrollbar-color: #c5cbd6 #f4f5f7;
+    scrollbar-width: thin;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  body {
+    font-family: var(--font-body), system-ui, -apple-system, sans-serif;
+    background-color: var(--bg-canvas);
+    color: var(--ink-primary);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: clip;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display), system-ui, -apple-system, sans-serif;
+    letter-spacing: -0.03em;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  ::selection {
+    background-color: var(--brand-gold);
+    color: var(--ink-primary);
+  }
+
+  a {
+    text-underline-offset: 3px;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--brand-sky-ink);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+}
+
+/* Custom WebKit scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f4f5f7;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c5cbd6;
+  border-radius: 9999px;
+  border: 2px solid #f4f5f7;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #52b5ed;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Jitter-style infinite GPU marquee */
+@keyframes jitter-marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.animate-jitter-marquee {
+  display: flex;
+  width: max-content;
+  animation: jitter-marquee 46s linear infinite;
+}
+
+.animate-jitter-marquee:hover,
+.animate-jitter-marquee:focus-within {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-jitter-marquee {
+    animation: none;
+    transform: none;
+  }
+}

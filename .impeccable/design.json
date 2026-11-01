@@ -1,0 +1,85 @@
+{
+  "name": "MC Permoníček",
+  "description": "Moderní rodinné centrum a akreditovaná dětská skupina v Jílovém u Prahy",
+  "tokens": {
+    "colors": {
+      "primary": "#52B5ED",
+      "primary-ink": "#0B6CA3",
+      "primary-deep": "#0B1E2D",
+      "secondary": "#FDD10A",
+      "secondary-deep": "#241D00",
+      "accent-coral": "#E24D2D",
+      "accent-coral-ink": "#B93316",
+      "accent-lime": "#BBE364",
+      "accent-lime-deep": "#182605",
+      "neutral-ink": "#111318",
+      "neutral-secondary": "#3E4451",
+      "neutral-muted": "#5A6170",
+      "neutral-surface": "#F4F5F7",
+      "neutral-surface-strong": "#EAECF0",
+      "neutral-canvas": "#FFFFFF"
+    },
+    "typography": {
+      "display": {
+        "fontFamily": "var(--font-display), Bricolage Grotesque, system-ui, sans-serif",
+        "fontWeight": 800,
+        "letterSpacing": "-0.03em",
+        "lineHeight": 1.08
+      },
+      "headline": {
+        "fontFamily": "var(--font-display), Bricolage Grotesque, system-ui, sans-serif",
+        "fontWeight": 700,
+        "letterSpacing": "-0.025em",
+        "lineHeight": 1.15
+      },
+      "body": {
+        "fontFamily": "var(--font-body), Figtree, system-ui, sans-serif",
+        "fontWeight": 400,
+        "letterSpacing": "normal",
+        "lineHeight": 1.55
+      },
+      "label": {
+        "fontFamily": "var(--font-body), Figtree, system-ui, sans-serif",
+        "fontWeight": 700,
+        "letterSpacing": "normal"
+      }
+    },
+    "rounded": {
+      "sm": "6px",
+      "md": "12px",
+      "lg": "16px",
+      "xl": "24px",
+      "card": "32px",
+      "pill": "9999px"
+    }
+  },
+  "narrative": {
+    "northStar": "Jitter Motion Playground for Permoníček",
+    "overview": "Mateřské centrum Permoníček, z.s. je rodinné centrum a akreditovaná dětská skupina v Jílovém u Prahy fungující od roku 2006. Nová vizuální identita a web spojují původní barvy (modrá, korálová, sluneční žlutá, jarní limetka) s moderním, hravým motion designem inspirovaným aplikací Jitter (jitter.video).",
+    "keyCharacteristics": [
+      "Čisté plochy #F4F5F7 se zaoblenými rohy (24–32px)",
+      "Plynulý infinite showreel reálných momentek z herny a přírody",
+      "Týdenní rozvrhový canvas v blankytné modři #52B5ED s interaktivním přepínáním dnů",
+      "Tři sticky stacked karty pro klíčové pilíře (dětská skupina pro 6 dětí, kroužky s 1. lekcí zdarma, otevřená herna)",
+      "Precizní česká typografie v písmech Bricolage Grotesque a Figtree"
+    ],
+    "rules": [
+      {
+        "name": "The Contrast Rule",
+        "body": "Na žlutých (#FDD10A), limetkových (#BBE364) i blankytně modrých (#52B5ED) plochách se používá výhradně hluboký černý inkoust (#111318 nebo #0B1E2D). Nikdy šedá ani bílá.",
+        "section": "Colors"
+      }
+    ],
+    "dos": [
+      "Vždy uvádět pro všechny dětské kroužky '1. ukázková lekce nezávazná a zdarma'.",
+      "Zachovávat původní maskotovu červenou čepičku a čistý bílý kabátek.",
+      "Využívat reálné fotografie dětí a pečovatelek v Jílovém u Prahy.",
+      "Dodržovat WCAG kontrast na všech barevných kartách."
+    ],
+    "donts": [
+      "Nikdy nepoužívat eyebrow/kicker štítky přímo nad nadpisy h1/h2/h3.",
+      "Nikdy nepoužívat textové gradienty ani tvrdé neobrutalistické stíny.",
+      "Nikdy nepoužívat generické emoji – pouze čisté SVG ikony Lucide."
+    ]
+  }
+}
